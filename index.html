@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Mahasiswa</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <h2>Dashboard Mahasiswa</h2>
+    <button onclick="logout()">Logout</button>
+    <table id="mahasiswaTable">
+      <thead>
+        <tr>
+          <th>NPM</th>
+          <th>Nama</th>
+          <th>Kelas</th>
+          <th>Aksi</th>
+        </tr>
+      </thead>
+      <tbody id="mahasiswaTableBody">
+      </tbody>
+    </table>
+
+    <h3>Tambah Mahasiswa</h3>
+    <form id="addForm">
+      <input type="text" id="npm" placeholder="NPM" required>
+      <input type="text" id="nama" placeholder="Nama" required>
+      <input type="text" id="kelas" placeholder="Kelas" required>
+      <button type="submit">Tambah</button>
+    </form>
+  </div>
+
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
